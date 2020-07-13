@@ -340,15 +340,18 @@ nav {
     .audio-room-section {
         overflow: hidden;
         position: relative;
-        padding: 3rem 0;
+        padding: 5rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
         background-image: url(../img/MICScollage.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         position: relative;
+        @media (min-width: 1000px) {
+            background-size: contain;
+        }
     }
     .audio-room-inner-section {
         position: relative;
@@ -892,6 +895,10 @@ form {
     text-shadow: 2px 2px 2px rgba(68, 54, 133, 0.3);
     font-size: 0.8em;
     letter-spacing: 0.1em;
+    display: none;
+    @media (min-width: 730px) {
+        display: block;
+    }
 }
 
 .drummer-name {
