@@ -308,8 +308,21 @@ nav {
                     cursor: pointer;
                 }
                 @media screen and (max-width: 899px) {
-                    width: 15rem;
-                    left: 20%;
+                    width: 13rem;
+                    top: 18rem;
+                    left: 30%;
+                    padding: 0rem;
+                    align-self: center;
+                    img {
+                        width: 5rem;
+                        height: auto;
+                    }
+                    .p-uploads {
+                        display: none;
+                    }
+                    .img-waves {
+                        display: none;
+                    }
                 }
                 // @media screen and (min-width: 900px) {
                 //     left: 50%;
@@ -956,6 +969,12 @@ form {
         p {
             color: #000;
         }
+        @media (max-width: 850px) {
+            width: 30rem;
+            padding: 1rem;
+            flex-direction: column;
+            justify-content: center;
+        }
         .services {
             width: 20rem;
             a {
@@ -969,7 +988,16 @@ form {
                 padding-right: 0.5rem;
                 text-decoration: underline;
             }
+            @media (max-width: 850px) {
+                margin: 2rem 0rem;
+                text-align: left;
+            }
         }
+    }
+    @media (max-width: 872px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
     }
 }
 
