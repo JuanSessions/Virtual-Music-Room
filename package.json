@@ -5,7 +5,7 @@
     "main": "app.js",
     "scripts": {
         "start": "node app.js",
-	"start:prod": "./node_modules/forever/bin/forever start app.js",
+	    "start:prod": "NODE_ENV=production && ./node_modules/forever/bin/forever start app.js",
         "stop:prod": "./node_modules/forever/bin/forever stop app.js"
     },
     "engines": {

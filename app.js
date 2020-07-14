@@ -18,12 +18,15 @@ app.use(setCors)
 app.use(express.static("client/build"))
 
 // mongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/vmr-db')
+mongoose.connect(env.db, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 mongoose.connection.on("error", (err) => console.log(err))
 mongoose.connection.on("open", () => console.log("database connected"))
 
 app.use("/users", musicianRoute)
-app.use("/api/projects", projectRoutes)
+app.use("/projects", projectRoutes)
 
 //client routes
 app.use('/', indexRoute);
@@ -51,7 +54,7 @@ app.use((err, req, res, next) => {
 })
 
 // server
-const port = process.env.PORT || 80
+const port = process.env.PORT || env.db.port
 
 app.listen(port, () => {
     console.log(`Server has been started on port: ${port}`)
