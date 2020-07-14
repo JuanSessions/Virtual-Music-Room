@@ -49,7 +49,7 @@ export default function Navbar() {
                                 <NavLink className="main-nav-link middle" to="/musicianAccount" exact activeClassName="active">My Account</NavLink>
                             </li>
 
-                            <li className="link-background nav-item-left">
+                            <li className="link-background nav-item-left logout">
                                 <NavLink className="main-nav-link middle" to="/logout" exact activeClassName="active">Logout</NavLink>
                             </li>
                         </div>

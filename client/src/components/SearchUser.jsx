@@ -46,8 +46,8 @@ function SearchUser() {
                         </h3>
                         <p>Level: {musician.level} </p>
                         <p>Role: {musician.role} </p>
-                        <p>Collaborations/Tracks uploaded</p>
-                        <img src={imageWaves} alt="" width="230"/>
+                        <p className="p-uploads">Collaborations/Tracks uploaded</p>
+                        <img src={imageWaves} alt="" className="img-waves" width="230" />
                     </div>
                 </div>
             )
