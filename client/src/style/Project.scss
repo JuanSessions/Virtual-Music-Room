@@ -9,7 +9,7 @@
         text-shadow: 0 0 5px black;
     }
     width: 100vw;
-    height: 90vh;
+    flex: 1;
     margin-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
@@ -18,7 +18,8 @@
     align-items: center;
     .projects-container-inner {
         position: relative;
-        width: 50vw;
+        width: 90vw;
+        max-width: 650px;
         padding: 1rem 0rem 2rem 0rem;
         display: flex;
         flex-direction: column;
@@ -30,7 +31,7 @@
         form {
             margin-top: 3rem;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             button {
@@ -39,6 +40,17 @@
                 &:hover {
                     background-color: rgba(122, 90, 141, 0.5);
                 }
+            }
+            .img {
+                flex: 1 0;
+                padding: 0 10px;
+            }
+            div {
+                flex: 1 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -208,16 +220,6 @@
 }
 
 .img-deco {
-    width: 150px;
-    position: absolute;
-    // top: 15rem;
     animation: fadeIn 1.7s infinite alternate;
-}
-
-.img-deco-one {
-    left: 2.4rem;
-}
-
-.img-deco-two {
-    left: 29rem;
+    max-width: 100%;
 }
