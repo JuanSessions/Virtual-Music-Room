@@ -64,20 +64,24 @@ export default function Projects(props) {
                     }
                 </ul>
 
-
-
                 <form onSubmit={handleSubmit} >
-                    <img src={imgDeco1} alt="img" className="img-deco img-deco-one" />
-                    <input
-                        value={name}
-                        onChange={(event) => {
-                            setName(event.target.value)
-                        }}
-                        type="text"
-                    />
+                    <div className="img">
+                        <img src={imgDeco1} alt="img" className="img-deco img-deco-one" />
+                    </div>
+                    <div>
+                        <input
+                            value={name}
+                            onChange={(event) => {
+                                setName(event.target.value)
+                            }}
+                            type="text"
+                        />
 
-                    <button type="submit" className="btn-style">Create project</button>
-                    <img src={imgDeco2} alt="img" className="img-deco img-deco-two" />
+                        <button type="submit" className="btn-style">Create project</button>
+                    </div>
+                    <div className="img">
+                        <img src={imgDeco2} alt="img" className="img-deco img-deco-two" />
+                    </div>
                 </form>
             </div>
         </div>

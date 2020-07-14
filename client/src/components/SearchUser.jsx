@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import AuthContext from '../context/authContext'
 import imageWaves from "../img/waves.png"
-
+import { Link } from "react-router-dom"
 
 function SearchUser() {
     const { isLoggedIn, token } = useContext(AuthContext)
@@ -10,8 +10,8 @@ function SearchUser() {
     const [searchResult, setSearchResult] = React.useState(null)
     const [allMusicians, setAllMusicians] = useState([])
     const [isFound, setIsFound] = useState(false)
-    const [showDiv, setShowDiv] = useState(false);
 
+    // Improvement tip: Filtering should be done on the server. Here the searchValue should be sent so you don't have to download all the users, only the ones that will be displayed
     useEffect(() => {
         fetch("/users", {
             headers: {
@@ -24,29 +24,31 @@ function SearchUser() {
             })
     }, [token])
 
-
     console.log("allMusicians:", allMusicians);
 
-    // const findUser = () => {
-
     let userData = allMusicians && allMusicians.map((musician, i) => {
-        if (musician.name.toLowerCase() === searchValue.toLowerCase()) {
+        if (searchValue && musician.name.toLowerCase() === searchValue.toLowerCase()) {
             // if (musician.name.toLowerCase().indexOf(searchValue.toLowerCase() !== -1) {
             // setIsFound(true)
             return (
-                <div key={i} className="musician">
-                    <span onClick={() => setShowDiv(false)}
-                        className="close-user"
-                    >
-                        X
-                    </span>
-                    {<img src={musician.profileImage} alt="Profile" width="100" height="100" />}
-                    <h3>{musician.name}</h3>
-                    <p>Level: {musician.level} </p>
-                    <p>Role: {musician.role} </p>
-                    <p>Collaborations/Tracks uploaded</p>
-                    <img src={imageWaves} alt="" width="230"/>
-                
+                <div className="user-found">
+                    <div key={i} className="musician">
+                        <span onClick={() => setSearchValue('')}
+                            className="close-user"
+                        >
+                            X
+                        </span>
+                        {<img src={musician.profileImage} alt="Profile" width="100" height="100" />}
+                        <h3>
+                            <Link to={`/profile/${musician._id}`}>
+                                {musician.name}
+                            </Link>
+                        </h3>
+                        <p>Level: {musician.level} </p>
+                        <p>Role: {musician.role} </p>
+                        <p>Collaborations/Tracks uploaded</p>
+                        <img src={imageWaves} alt="" width="230" />
+                    </div>
                 </div>
             )
         }
@@ -65,18 +67,15 @@ function SearchUser() {
             {isLoggedIn ? (
                 <div>
                     <form>
-                        <input type="search" name="search-user"
+                        <input type="search"
+                            name="search-user"
+                            value={searchValue}
                             placeholder="search for a user..."
                             onChange={(e) => { setSearchValue(e.target.value) }}
-                            onClick={() => setShowDiv(true)}
                         />
                     </form>
 
-
-                    {showDiv && <div className="user-found">
-                        {userData}
-                    </div>
-                    }
+                    {userData}
 
                     {/**    {isFound ? (  ) : null}  */}
 
