@@ -54,7 +54,7 @@ app.use((err, req, res, next) => {
 })
 
 // server
-const port = process.env.PORT || env.db.port
+const port = process.env.PORT || env.port
 
 app.listen(port, () => {
     console.log(`Server has been started on port: ${port}`)
