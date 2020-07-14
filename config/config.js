@@ -16,6 +16,6 @@ const prodConfig = {
     jwt_key: env.S_KEY
 }
 
-const currentConfig = config.env === "production" ? prodConfig : devConfig;
+const currentConfig = prodConfig;
 
 module.exports = Object.assign({}, config, currentConfig)

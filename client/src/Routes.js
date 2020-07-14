@@ -44,7 +44,7 @@ export default function Routes() {
 
             <Route exact path="/musicians" component={Musicians} />
 
-            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/projectList" component={Projects} />
 
             <Route exact path="/service" component={Services} />
 

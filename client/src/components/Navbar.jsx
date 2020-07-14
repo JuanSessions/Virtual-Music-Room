@@ -19,7 +19,7 @@ export default function Navbar() {
                                 <NavLink className="main-nav-link middle" to="/musicians" exact activeClassName="active">Musicians</NavLink>
                             </li>
                             <li className="link-background">
-                                <NavLink className="main-nav-link middle" to="/projects" exact activeClassName="active">Projects</NavLink>
+                                <NavLink className="main-nav-link middle" to="/projectList" exact activeClassName="active">Projects</NavLink>
                             </li>
                             <li className="link-background">
                                 <NavLink className="main-nav-link middle" to="/service" exact activeClassName="active">Services</NavLink>

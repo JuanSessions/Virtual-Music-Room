@@ -4,7 +4,9 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+	"start:prod": "./node_modules/forever/bin/forever start app.js",
+        "stop:prod": "./node_modules/forever/bin/forever stop app.js"
     },
     "engines": {
         "node": "v12.6.0"
@@ -21,5 +23,8 @@
         "mongoose": "^5.9.16",
         "multer": "^1.4.2",
         "nodemailer": "^6.4.10"
+    },
+    "devDependencies": {
+        "forever": "^3.0.0"
     }
 }
