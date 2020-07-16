@@ -86,7 +86,6 @@ nav {
             right: 1.5rem;
         }
     }
-
     // .nav-item-auth {
     //     margin-top: -0.5rem;
     // }
@@ -276,7 +275,7 @@ nav {
             background-size: auto 25rem;
             canvas {
                 height: 20rem;
-                width: 95%;
+                width: 100%;
             }
         }
         // search container
@@ -998,6 +997,10 @@ form {
         justify-content: center;
         flex-wrap: wrap;
         text-align: center;
+        .service-txt {
+            width: 20rem;
+            margin: 0 auto;
+        }
     }
 }
 

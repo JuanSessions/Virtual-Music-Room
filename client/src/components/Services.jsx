@@ -6,7 +6,9 @@ export default function Services() {
     return (
         <div className="service-container">
             <h2 className="heading">Services</h2>
-            <p> We provide different services to help unknown artists everywhere.</p>
+            <div className="service-txt">
+                <p> We provide different services to help unknown artists everywhere.</p>
+            </div>
 
             <div className="service-offer">
                 <div className="services">

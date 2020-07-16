@@ -223,3 +223,11 @@
     animation: fadeIn 1.7s infinite alternate;
     max-width: 100%;
 }
+
+// responsive
+@media (max-width: 872px) {
+    .btn-delete-project,
+    .back-btn {
+        display: none;
+    }
+}
