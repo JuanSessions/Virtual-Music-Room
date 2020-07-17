@@ -5,11 +5,9 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // background-color: rgb(228, 226, 226);
 }
 
 .body-background {
-    //background-image: url(../img/negativeDrum.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +23,6 @@ nav {
     padding-top: 1.2rem;
     background-color: #050505;
     box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.7);
-    // box-shadow: 0px 10px 15px -1px rgba(7, 7, 7, 0.8);
     z-index: 1;
     ul {
         display: flex;
@@ -35,11 +32,6 @@ nav {
         li {
             margin: 0rem 0.5rem;
         }
-        // li:first-child {
-        //     @media screen and (max-width: 700px){
-        //         margin-left: -0.5rem;
-        //     }
-        // }
         a {
             text-decoration: none;
             font-family: 'Staatliches', cursive;
@@ -60,11 +52,6 @@ nav {
     }
     .nav-li-div {
         display: flex;
-        //  li:first-child {
-        //     @media screen and (max-width: 700px){
-        //         margin-left: 0.3rem;
-        //     }
-        // }
     }
     .nav-item-left {
         position: absolute;
@@ -86,10 +73,6 @@ nav {
             right: 1.5rem;
         }
     }
-    // .nav-item-auth {
-    //     margin-top: -0.5rem;
-    // }
-    // link hover effect
     a.middle {
         position: relative;
     }
@@ -166,12 +149,7 @@ nav {
     .main-nav {
         display: flex;
         flex-direction: row;
-        // justify-content: center;
-        //width: 35rem;
-        //margin: 0 auto;
         margin-top: -0.3em;
-        // height: 5rem;
-        // background-color: rgba(0, 0, 0,0.8);
     }
     .main-nav li {
         margin: 0;
@@ -200,11 +178,6 @@ nav {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    // background-color: rgba(241, 236, 236, 0.5);
-    // background: rgb(111,134,173);
-    // background: radial-gradient(circle, rgba(111,134,173,0.9724089464887518) 0%, rgba(3,4,29,1) 83%);
-    // background: rgb(70,149,172);
-    // background: radial-gradient(circle, rgba(70,149,172,1) 0%, rgba(3,4,29,1) 83%);
     background: rgb(70, 149, 172);
     background: radial-gradient(circle, rgba(70, 149, 172, 1) 0%, rgba(1, 1, 13, 1) 87%);
     @media screen and (min-width: 798px) {
@@ -323,9 +296,6 @@ nav {
                         display: none;
                     }
                 }
-                // @media screen and (min-width: 900px) {
-                //     left: 50%;
-                // }
                 @media screen and (min-width: 900px) {
                     left: 38%;
                 }
@@ -391,12 +361,9 @@ nav {
         }
     }
     .audioRoom-control {
-        //height: 30vh;
         position: absolute;
         width: 250px;
         height: 250px;
-        // margin: 10rem auto;
-        //margin-top: 20rem;
         background: black;
         border-radius: 5px;
         display: flex;
@@ -574,7 +541,6 @@ nav {
         border-bottom: 3px solid rgb(122, 90, 141);
         input {
             margin: 0.5rem;
-            // padding: 0.2rem 3rem;
             letter-spacing: 0.05em;
         }
         input[type='text'],
@@ -594,7 +560,6 @@ nav {
         }
         .inp-label {
             text-align: left;
-            // margin-right: 1rem;
         }
     }
     h2 {
@@ -649,12 +614,10 @@ nav {
 .musician-container {
     // width: 100vw;
     margin-top: 2rem;
-    padding: 2rem 2rem 3rem 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background-image: url(../img/collage.jpg);
     h2 {
         font-size: 2rem;
         font-family: 'Staatliches', cursive;

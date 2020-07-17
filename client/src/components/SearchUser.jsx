@@ -28,8 +28,7 @@ function SearchUser() {
 
     let userData = allMusicians && allMusicians.map((musician, i) => {
         if (searchValue && musician.name.toLowerCase() === searchValue.toLowerCase()) {
-            // if (musician.name.toLowerCase().indexOf(searchValue.toLowerCase() !== -1) {
-            // setIsFound(true)
+            
             return (
                 <div className="user-found">
                     <div key={i} className="musician">
@@ -53,13 +52,10 @@ function SearchUser() {
             )
         }
         else {
-            // setIsFound(false)
             console.log("user not found")
         }
     })
-    // }
 
-    // console.log("userData:", userData)
 
 
     return (
