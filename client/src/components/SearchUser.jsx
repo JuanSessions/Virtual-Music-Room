@@ -7,9 +7,7 @@ function SearchUser() {
     const { isLoggedIn, token } = useContext(AuthContext)
 
     const [searchValue, setSearchValue] = useState("")
-    const [searchResult, setSearchResult] = React.useState(null)
     const [allMusicians, setAllMusicians] = useState([])
-    const [isFound, setIsFound] = useState(false)
 
     // Improvement tip: Filtering should be done on the server. Here the searchValue should be sent so you don't have to download all the users, only the ones that will be displayed
     useEffect(() => {
@@ -72,9 +70,6 @@ function SearchUser() {
                     </form>
 
                     {userData}
-
-                    {/**    {isFound ? (  ) : null}  */}
-
                 </div>
             ) : null}
         </div>
