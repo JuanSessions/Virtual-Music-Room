@@ -18,7 +18,9 @@ export default function Navbar() {
             <ul className={`main-nav ${navbarToggle ? "toggle" : ""}`}
                 onMouseLeave={()=>{setNavbarToggle(false)}}
             >
-               
+                <li className="link-background">
+                    <NavLink className="main-nav-link middle" to="/service" exact activeClassName="active">Services</NavLink>
+                </li>
                 {
                     isLoggedIn && (
                         <>
@@ -27,9 +29,6 @@ export default function Navbar() {
                             </li>
                             <li className="link-background">
                                 <NavLink className="main-nav-link middle" to="/projects" exact activeClassName="active">Projects</NavLink>
-                            </li>
-                            <li className="link-background">
-                                <NavLink className="main-nav-link middle" to="/service" exact activeClassName="active">Services</NavLink>
                             </li>
                         </>
                     )
