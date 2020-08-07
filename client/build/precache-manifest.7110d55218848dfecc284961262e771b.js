@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68ef3ce3918479bf0cfa9f52820ca4d2",
+    "revision": "16aeaf577e59b825960923aa49371179",
     "url": "./index.html"
   },
   {
-    "revision": "42aac1130578c28f55f4",
-    "url": "./static/css/2.a3c92f14.chunk.css"
+    "revision": "d75741beb92e9ae8b76a",
+    "url": "./static/css/2.e2964109.chunk.css"
   },
   {
-    "revision": "8a8624630f72744257f6",
-    "url": "./static/css/main.1dceae13.chunk.css"
+    "revision": "54438f86e34104e7bc8e",
+    "url": "./static/css/main.b4139f01.chunk.css"
   },
   {
-    "revision": "42aac1130578c28f55f4",
-    "url": "./static/js/2.9d536e26.chunk.js"
+    "revision": "d75741beb92e9ae8b76a",
+    "url": "./static/js/2.5dc3806c.chunk.js"
   },
   {
-    "revision": "b58f303a1c102164a98a053e4637d458",
-    "url": "./static/js/2.9d536e26.chunk.js.LICENSE.txt"
+    "revision": "1f36476d709d681e056142ead9e2875f",
+    "url": "./static/js/2.5dc3806c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a8624630f72744257f6",
-    "url": "./static/js/main.26343773.chunk.js"
+    "revision": "54438f86e34104e7bc8e",
+    "url": "./static/js/main.1799d653.chunk.js"
   },
   {
-    "revision": "f35dbb30bb93cebd5c82",
-    "url": "./static/js/runtime-main.f63e6028.js"
+    "revision": "d90c5b93796701d5570a",
+    "url": "./static/js/runtime-main.8b0ae790.js"
   },
   {
     "revision": "84a0cd5eaf28e04da3568d7324bd834f",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "60495e28c547de8b144f58045c2bc292",
     "url": "./static/media/GUITARS 2 PSICO.60495e28.mp3"
+  },
+  {
+    "revision": "a0751c62de92690c4def380c34f861a0",
+    "url": "./static/media/MICScollage.a0751c62.jpg"
   },
   {
     "revision": "dbcb41e1423ea625bbfc3b7209dcd985",
@@ -214,10 +218,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "714d1724a2b3323651e3a4d380f644d6",
     "url": "./static/media/co.714d1724.svg"
-  },
-  {
-    "revision": "3cfd1e872b9c6e2ab6c0c265eb4ca53d",
-    "url": "./static/media/collage.3cfd1e87.jpg"
   },
   {
     "revision": "46b19aa9b98b0ef48c79e647016ab886",
