@@ -9,16 +9,18 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
-            <span class="navbar-toggle-icon" id="js-navbar-toggle" onClick={() => { setNavbarToggle((navbarToggle) => !navbarToggle) }}>
+            <span class="navbar-toggle-icon" id="js-navbar-toggle" 
+                onClick={() => { setNavbarToggle((navbarToggle) => !navbarToggle) }}
+            >
                 <i class="fas fa-bars"></i>
             </span>
             <NavLink className="main-nav-link middle logo" to="/" exact activeClassName="active">VMR Home</NavLink>
-            <ul className={`main-nav ${navbarToggle ? "toggle" : ""}`} >
-                {/**   
+            <ul className={`main-nav ${navbarToggle ? "toggle" : ""}`}
+                onMouseLeave={()=>{setNavbarToggle(false)}}
+            >
                 <li className="link-background">
-                    <NavLink className="main-nav-link middle logo" to="/" exact activeClassName="active">VMR Home</NavLink>
+                    <NavLink className="main-nav-link middle" to="/service" exact activeClassName="active">Services</NavLink>
                 </li>
-                */}
                 {
                     isLoggedIn && (
                         <>
@@ -27,9 +29,6 @@ export default function Navbar() {
                             </li>
                             <li className="link-background">
                                 <NavLink className="main-nav-link middle" to="/projectList" exact activeClassName="active">Projects</NavLink>
-                            </li>
-                            <li className="link-background">
-                                <NavLink className="main-nav-link middle" to="/service" exact activeClassName="active">Services</NavLink>
                             </li>
                         </>
                     )

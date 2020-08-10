@@ -7,9 +7,7 @@ function SearchUser() {
     const { isLoggedIn, token } = useContext(AuthContext)
 
     const [searchValue, setSearchValue] = useState("")
-    const [searchResult, setSearchResult] = React.useState(null)
     const [allMusicians, setAllMusicians] = useState([])
-    const [isFound, setIsFound] = useState(false)
 
     // Improvement tip: Filtering should be done on the server. Here the searchValue should be sent so you don't have to download all the users, only the ones that will be displayed
     useEffect(() => {
@@ -28,8 +26,7 @@ function SearchUser() {
 
     let userData = allMusicians && allMusicians.map((musician, i) => {
         if (searchValue && musician.name.toLowerCase() === searchValue.toLowerCase()) {
-            // if (musician.name.toLowerCase().indexOf(searchValue.toLowerCase() !== -1) {
-            // setIsFound(true)
+            
             return (
                 <div className="user-found">
                     <div key={i} className="musician">
@@ -53,13 +50,10 @@ function SearchUser() {
             )
         }
         else {
-            // setIsFound(false)
             console.log("user not found")
         }
     })
-    // }
 
-    // console.log("userData:", userData)
 
 
     return (
@@ -76,9 +70,6 @@ function SearchUser() {
                     </form>
 
                     {userData}
-
-                    {/**    {isFound ? (  ) : null}  */}
-
                 </div>
             ) : null}
         </div>

@@ -1,6 +1,8 @@
 .projects-container {
   width: 100vw;
-  height: 90vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-top: 2rem;
   padding-bottom: 2rem;
   display: -webkit-box;
@@ -29,7 +31,9 @@
 
 .projects-container .projects-container-inner {
   position: relative;
-  width: 50vw;
+  border: 2px solid;
+  width: 90vw;
+  max-width: 650px;
   padding: 1rem 0rem 2rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,9 +49,9 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px;
-  background-color: rgba(68, 65, 82, 0.7);
-  -webkit-box-shadow: inset 4px -2px 45px -5px rgba(121, 118, 118, 0.9);
-          box-shadow: inset 4px -2px 45px -5px rgba(121, 118, 118, 0.9);
+  background-color: rgba(184, 181, 199, 0.7);
+  -webkit-box-shadow: inset 4px -2px 45px -5px rgba(77, 70, 70, 0.9);
+          box-shadow: inset 4px -2px 45px -5px rgba(77, 70, 70, 0.9);
 }
 
 .projects-container .projects-container-inner form {
@@ -55,10 +59,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -74,6 +78,32 @@
 
 .projects-container .projects-container-inner form button:hover {
   background-color: rgba(122, 90, 141, 0.5);
+}
+
+.projects-container .projects-container-inner form .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  padding: 0 10px;
+}
+
+.projects-container .projects-container-inner form div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects-container ul {
@@ -109,7 +139,7 @@
 }
 
 .projects-container ul li a:hover {
-  color: #071a42;
+  color: #27385c;
 }
 
 .projects-container ul li a.middle {
@@ -293,17 +323,15 @@
 }
 
 .img-deco {
-  width: 150px;
-  position: absolute;
   -webkit-animation: fadeIn 1.7s infinite alternate;
           animation: fadeIn 1.7s infinite alternate;
+  max-width: 100%;
 }
 
-.img-deco-one {
-  left: 2.4rem;
-}
-
-.img-deco-two {
-  left: 29rem;
+@media (max-width: 872px) {
+  .btn-delete-project,
+  .back-btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Project.css.map */

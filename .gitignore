@@ -2,9 +2,9 @@
 /package-lock.json
 .now
 
+client/src/components/private
+client/src/js/private
 client/public/uploads
 client/node_modules
 client/package-lock.json
 client/.env
-client/src/components/private
-client/js/private
