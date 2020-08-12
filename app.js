@@ -31,7 +31,7 @@ app.use("/projects", projectRoutes)
 //client routes
 app.use('/', indexRoute);
 app.use('/musicianAccount', indexRoute);
-app.use('/projects/:id?', indexRoute);
+app.use('/projectList/:id?', indexRoute);
 app.use('/signup', indexRoute);
 app.use('/login', indexRoute);
 app.use('/logout', indexRoute);
