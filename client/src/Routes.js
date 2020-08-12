@@ -51,7 +51,7 @@ export default function Routes() {
             <Route exact path="/support" component={Support} />
 
             <Route
-                path="/projects/:id"
+                path="/projectList/:id"
                 render={(props) => (
                     <SingleProject
                         {...props}
