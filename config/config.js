@@ -8,7 +8,7 @@ const config = {
 
 const devConfig = {
     port: env.PORT_LOCAL,
-    db: env.MONGO_LOCAL,
+    db: env.MONGO_PROD,
     jwt_key: env.S_KEY
 }
 

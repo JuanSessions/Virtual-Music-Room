@@ -91,4 +91,6 @@ exports.postTrack = async (req, res, next) => {
     await Project.findByIdAndUpdate(
         req.params.id, { $push: { tracks: track._id } }, { new: true, useFindAndModify: false }
     );
+
+    return res.json({ success: true })
 }
