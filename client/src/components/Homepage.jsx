@@ -3,6 +3,7 @@ import TextParticles from './private/TextParticles'
 import AudioRoom from './private/AudioRoom'
 import gifLogo from '../img/vmr.gif'
 import SearchUser from './SearchUser'
+import InfoHome from './InfoHome'
 
 
 function Homepage() {
@@ -16,6 +17,7 @@ function Homepage() {
                     <h1>Virtual Music Room</h1>
                 </div>
                 <div className="particles-map">
+                    <InfoHome />
                     <SearchUser />
                     <TextParticles />
                 </div>

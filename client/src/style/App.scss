@@ -998,6 +998,47 @@ form {
     }
 }
 
+//infoHome
+.info-home {
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgba(228, 226, 226, 0.8);
+    box-shadow: inset 1px 2px 16px 5px rgba(0, 0, 0, 0.47);
+}
+
+.speech-bubble {
+    width: 15rem;
+    padding: 0.7rem;
+    margin-left: 3rem;
+    position: relative;
+    top: 3rem;
+    background-color: rgba(228, 226, 226, 0.8);
+    //box-shadow: inset 1px 2px 16px 5px rgba(0, 0, 0, 0.47);
+    border-radius: 1em;
+    h2 {
+        margin: 0;
+    }
+    p {
+        line-height: 1.3em;
+    }
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 46px solid transparent;
+    border-top-color: rgba(228, 226, 226, 0.8);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -23px;
+    margin-bottom: -46px;
+}
+
 // responsive
 @media screen and (max-width: 450px) {
     .musician-account-container {
