@@ -44,14 +44,14 @@ export default function Routes() {
 
             <Route exact path="/musicians" component={Musicians} />
 
-            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/projectList" component={Projects} />
 
             <Route exact path="/service" component={Services} />
 
             <Route exact path="/support" component={Support} />
 
             <Route
-                path="/projects/:id"
+                path="/projectList/:id"
                 render={(props) => (
                     <SingleProject
                         {...props}

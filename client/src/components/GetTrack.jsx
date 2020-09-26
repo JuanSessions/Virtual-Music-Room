@@ -16,8 +16,6 @@ export default function GetTrack() {
         return "loading"
     }
 
-    console.log("tracks:", tracks)
-
     return (
         <div>
             <h2>Get Track</h2>

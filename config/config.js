@@ -3,15 +3,17 @@ const dot = require("dotenv")
 dot.config()
 
 const config = {
-    env: env.NODE_ENV || "development"
+    env: process.env.NODE_ENV || "development"
 }
 
 const devConfig = {
-    db: env.MONGO_LOCAL,
+    port: env.PORT_LOCAL,
+    db: env.MONGO_PROD,
     jwt_key: env.S_KEY
 }
 
 const prodConfig = {
+    port: env.PORT_PROD,
     db: env.MONGO_PROD,
     jwt_key: env.S_KEY
 }
