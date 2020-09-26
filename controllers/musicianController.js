@@ -143,6 +143,7 @@ exports.login = async(req, res, next) => {
         const user = await User.findOne({
             email
         })
+
         const valid = await user.checkPassword(password)
         if (!valid) throw httpError(403)
 
