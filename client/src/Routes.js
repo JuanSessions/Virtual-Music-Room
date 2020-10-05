@@ -15,6 +15,7 @@ import DeleteAccount from './components/DeleteAccount'
 import EditAccount from './components/EditAccount'
 import Services from './components/Services'
 import Support from './components/Support'
+import Info from './components/Info'
 
 
 export default function Routes() {
@@ -47,6 +48,8 @@ export default function Routes() {
             <Route exact path="/projectList" component={Projects} />
 
             <Route exact path="/service" component={Services} />
+
+            <Route exact path = "/info" component = {Info }/>
 
             <Route exact path="/support" component={Support} />
 
