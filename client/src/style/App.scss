@@ -21,7 +21,7 @@ nav {
     top: 0;
     padding: 0.5rem 0.3rem;
     padding-top: 1.2rem;
-    background-color: #050505;
+    background-color: #19113b;
     box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.7);
     z-index: 1;
     ul {
@@ -40,7 +40,7 @@ nav {
             font-size: 1.2em;
             text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             &:hover {
-                color: rgb(122, 90, 141);
+                color: rgb(182, 154, 199);
             }
             @media screen and (max-width: 700px) {
                 font-size: 0.9em;
