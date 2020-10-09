@@ -98,7 +98,7 @@ export default (canvas) => {
                     (particlesArray[a].pointY - particlesArray[b].pointY) * (particlesArray[a].pointY - particlesArray[b].pointY));
                 if (distance < area) {
                     opacity = 1 - distance / 50000;
-                    ctx.strokeStyle = `rgb(122, 90, 141, ${opacity})`;
+                    ctx.strokeStyle = `rgba(22, 90, 141, ${opacity})`;
                     ctx.lineWidth = 3.5;
                     ctx.beginPath();
                     ctx.moveTo(particlesArray[a].pointX, particlesArray[a].pointY);
