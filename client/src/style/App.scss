@@ -21,7 +21,7 @@ nav {
     top: 0;
     padding: 0.5rem 0.3rem;
     padding-top: 1.2rem;
-    background-color: #050505;
+    background-color: #03010a;
     box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.7);
     z-index: 1;
     ul {
@@ -40,7 +40,7 @@ nav {
             font-size: 1.2em;
             text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             &:hover {
-                color: rgb(122, 90, 141);
+                color: rgb(182, 154, 199);
             }
             @media screen and (max-width: 700px) {
                 font-size: 0.9em;
@@ -193,6 +193,7 @@ nav {
         padding: 0.1rem;
         background-color: rgb(6, 5, 14);
         box-shadow: 1px -1px 11px -1px rgba(0, 0, 0, 0.75);
+        border-top: groove rgb(80, 89, 117);
         h1 {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.3em;
@@ -322,7 +323,7 @@ nav {
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        background-color: rgb(228, 226, 226);
+        //background-color: rgb(228, 226, 226);
         @media screen and (max-width: 700px) {
             img {
                 width: 20rem;
@@ -726,8 +727,7 @@ nav {
                 margin-top: 0.4rem;
             }
             img {
-                box-shadow: 3px 3px 3px 3px rgb(5, 15, 37);
-                border-radius: 70px;
+                border-radius: 40%;
             }
         }
         .account-manager {
@@ -996,6 +996,55 @@ form {
             resize: none;
         }
     }
+}
+
+//infoHome
+.info {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(226, 218, 218, 0.5);
+    border-radius: 7px;
+}
+
+.info-home {
+    width: 15rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgba(228, 226, 226, 0.8);
+    box-shadow: inset 1px 2px 16px 5px rgba(0, 0, 0, 0.47);
+}
+
+.speech-bubble {
+    width: 15rem;
+    padding: 0.7rem;
+    margin-left: 9rem;
+    position: absolute;
+    top: 16rem;
+    background-color: rgba(228, 226, 226, 0.8);
+    //box-shadow: inset 1px 2px 16px 5px rgba(0, 0, 0, 0.47);
+    border-radius: 1em;
+    h2 {
+        margin: 0;
+    }
+    p {
+        line-height: 1.3em;
+    }
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 46px solid transparent;
+    border-top-color: rgba(228, 226, 226, 0.8);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -23px;
+    margin-bottom: -46px;
 }
 
 // responsive

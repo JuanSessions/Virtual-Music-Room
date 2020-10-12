@@ -21,6 +21,9 @@ export default function Navbar() {
                 <li className="link-background">
                     <NavLink className="main-nav-link middle" to="/service" exact activeClassName="active">Services</NavLink>
                 </li>
+                <li className="link-background">
+                    <NavLink className="main-nav-link middle" to="/info" exact activeClassName="active">Info</NavLink>
+                </li>
                 {
                     isLoggedIn && (
                         <>
