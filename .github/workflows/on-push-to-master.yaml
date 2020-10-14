@@ -16,6 +16,8 @@ jobs:
                   registry-url: https://npm.pkg.github.com/
             - name: "Install dependencies"
               run: npm i --verbose
+            - name: "Build frontend"
+              run: cd client/ && npm run build
             - name: "Deploy to the internal server"
               uses: burnett01/rsync-deployments@4.0
               with:
