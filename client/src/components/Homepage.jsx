@@ -4,6 +4,7 @@ import AudioRoom from "./AudioRoom";
 import gifLogo from "../img/vmr.gif";
 import SearchUser from "./SearchUser";
 import InfoHome from "./InfoHome";
+import Footer from "./Footer";
 
 function Homepage() {
   return (
@@ -33,6 +34,7 @@ function Homepage() {
         </div>
         <AudioRoom />
       </div>
+      <Footer />
     </div>
   );
 }

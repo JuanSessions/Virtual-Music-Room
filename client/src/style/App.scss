@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +34,7 @@ nav {
         }
         a {
             text-decoration: none;
-            font-family: 'Staatliches', cursive;
+            font-family: "Staatliches", cursive;
             letter-spacing: 0.08em;
             color: #fff;
             font-size: 1.2em;
@@ -105,7 +105,7 @@ nav {
 .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
 }
 
 .main-nav li {
@@ -179,9 +179,9 @@ nav {
     align-items: center;
     overflow-x: hidden;
     background: rgb(70, 149, 172);
-    background: radial-gradient(circle, rgba(70, 149, 172, 1) 0%, rgba(1, 1, 13, 1) 87%);
+    background: radial-gradient( circle, rgba(70, 149, 172, 1) 0%, rgba(1, 1, 13, 1) 87%);
     @media screen and (min-width: 798px) {
-        margin-top: 3.0rem;
+        margin-top: 3rem;
         min-height: calc(100vh - 3rem);
     }
 }
@@ -195,7 +195,7 @@ nav {
         box-shadow: 1px -1px 11px -1px rgba(0, 0, 0, 0.75);
         border-top: groove rgb(80, 89, 117);
         h1 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: "Orbitron", sans-serif;
             font-size: 1.3em;
             letter-spacing: 1.2em;
             font-weight: 700;
@@ -226,7 +226,7 @@ nav {
             }
         }
         h2 {
-            font-family: 'Staatliches', cursive;
+            font-family: "Staatliches", cursive;
             font-size: 1.5em;
             letter-spacing: 0.1em;
             text-align: center;
@@ -237,13 +237,18 @@ nav {
     // particles text
     .particles-map {
         width: 100%;
-        height: 100vh;
-        margin-bottom: 0.3rem;
+        height: 66vh;
+        margin-bottom: 0.1rem;
         background-image: url(../img/world-map2.jpg);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
         box-shadow: 1px -1px 11px -1px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 10px 15px -5px rgba(15, 15, 15, 0.75);
+        canvas {
+            width: 100vw;
+            height: 65vh;
+        }
         @media screen and (max-width: 700px) {
             height: 20rem;
             background-size: auto 25rem;
@@ -330,7 +335,7 @@ nav {
             }
         }
     }
-    // audioRoom-control 
+    // audioRoom-control
     .audio-room-section {
         overflow: hidden;
         position: relative;
@@ -393,7 +398,7 @@ nav {
         bottom: 100%;
         background-image: url(../img/drums.jpg);
         &:after {
-            content: '';
+            content: "";
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
@@ -410,7 +415,7 @@ nav {
         bottom: 100%;
         background-image: url(../img/guitar.jpg);
         &:after {
-            content: '';
+            content: "";
             width: 0;
             height: 0;
             margin-left: 1.4rem;
@@ -429,7 +434,7 @@ nav {
         top: 100%;
         background-image: url(../img/bass.jpg);
         &:after {
-            content: '';
+            content: "";
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
@@ -446,7 +451,7 @@ nav {
         top: 100%;
         background-image: url(../img/pianoJuanRoom.png);
         &:after {
-            content: '';
+            content: "";
             width: 0;
             height: 0;
             margin-left: 1.65rem;
@@ -503,10 +508,13 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        font-family: 'Staatliches', cursive;
+        font-family: "Staatliches", cursive;
         font-size: 1.1em;
         word-spacing: 0.2rem;
-        animation: fadeIn 1s infinite alternate;
+        background-color: #091422;
+        color: rgb(185, 182, 182);
+        letter-spacing: 0.05em;
+        //animation: fadeIn 1s infinite alternate;
         @media screen and (max-width: 425px) {
             font-size: 0.8em;
         }
@@ -521,7 +529,7 @@ nav {
     padding: 1rem 0rem;
     background-color: rgba(243, 243, 245, 0.8);
     box-shadow: 0px 2px 12px 0px rgba(1, 9, 26, 1);
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     letter-spacing: 0.09em;
     @media screen and (max-width: 550px) {
         width: 23rem;
@@ -544,9 +552,9 @@ nav {
             margin: 0.5rem;
             letter-spacing: 0.05em;
         }
-        input[type='text'],
-        input[type='email'],
-        input[type='password'] {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
             width: 15rem;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -555,7 +563,7 @@ nav {
             color: rgb(221, 217, 217);
         }
         .inp-div {
-            input[type='radio'] {
+            input[type="radio"] {
                 text-align: right;
             }
         }
@@ -621,7 +629,7 @@ nav {
     align-items: center;
     h2 {
         font-size: 2rem;
-        font-family: 'Staatliches', cursive;
+        font-family: "Staatliches", cursive;
         letter-spacing: 0.1em;
         color: rgb(241, 240, 240);
         text-shadow: 0 0 5px black;
@@ -803,7 +811,7 @@ form {
     }
 }
 
-// 
+//
 .msg-container {
     font-size: 1.5rem;
     text-align: center;
@@ -853,7 +861,7 @@ form {
 
 // link for mailto
 .btn-link-mailto {
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     letter-spacing: 0.05em;
     color: #000;
     text-decoration: none;
@@ -869,7 +877,7 @@ form {
 // pages heading
 .heading {
     font-size: 2rem;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     letter-spacing: 0.1em;
     color: rgb(241, 240, 240);
     text-shadow: 0 0 5px black;
@@ -877,7 +885,7 @@ form {
 
 //names musicians instruments in the room
 .instruments-name {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     text-shadow: 2px 2px 2px rgba(68, 54, 133, 0.3);
     font-size: 0.8em;
     letter-spacing: 0.1em;
@@ -1033,7 +1041,7 @@ form {
 }
 
 .speech-bubble:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1045,6 +1053,14 @@ form {
     border-left: 0;
     margin-left: -23px;
     margin-bottom: -46px;
+}
+
+@media screen and (max-width: 460px) {
+    .speech-bubble {
+        width: 12rem;
+        padding: 0.7rem;
+        margin-left: 2rem;
+    }
 }
 
 // responsive

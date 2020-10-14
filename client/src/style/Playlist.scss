@@ -11,7 +11,7 @@
 }
 
 .playlist .channel {
-    background: #7d868a;
+    background: #7d7885;
 }
 
 .playlist .channel-progress {
@@ -29,6 +29,7 @@
 .playlist .state-cursor,
 .playlist .state-select {
     cursor: text;
+    border-bottom: 1px solid rgb(138, 138, 192);
 }
 
 .playlist .state-fadein {

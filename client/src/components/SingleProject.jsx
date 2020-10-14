@@ -90,7 +90,7 @@ class SingleProject extends React.Component {
           "x-auth": this.props.token,
         },
       }).then(() => {
-        this.props.history.push("/projects");
+        this.props.history.push("/");
       });
     }
   };
