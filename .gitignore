@@ -2,6 +2,7 @@
 /package-lock.json
 .now
 
+client/build
 client/public/uploads
 client/node_modules
 client/package-lock.json
