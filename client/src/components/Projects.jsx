@@ -24,7 +24,7 @@ export default function Projects(props) {
 
     useEffect(() => {
         fetchProjects();
-    }, [token]);
+    });
 
     if (!isLoggedIn) {
         return <Redirect to="/login" />;

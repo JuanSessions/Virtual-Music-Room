@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import WaveformPlaylist from "waveform-playlist";
 import { withRouter } from "react-router";
 import { Link, Redirect } from "react-router-dom";
@@ -119,7 +119,6 @@ class SingleProject extends React.Component {
             Back to all projects
           </Link>
           <div className="project-title">
-            <h3></h3>
             {/**  <p>Project:</p> */}
             <h2>{project.name} </h2>
             {project.owner && <h3> by {project.owner.name}</h3>}

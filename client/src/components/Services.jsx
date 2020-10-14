@@ -18,7 +18,12 @@ export default function Services() {
 
                 <div className="services">
                     <p>Free templates to help you display your material in a professional way.</p>
-                    <a href="https://musician-portfolio.netlify.app/" target="_blank" className="link-portfolio">
+                    <a
+                        href="https://musician-portfolio.netlify.app/" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-portfolio"
+                    >
                         <i class="far fa-id-card"></i>
                         Musician Portfolio Template
                     </a>
