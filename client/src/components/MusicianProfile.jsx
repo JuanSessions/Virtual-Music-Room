@@ -5,7 +5,6 @@ import AuthContext from '../context/authContext'
 export default function MusicianProfile(props) {
     const { isLoggedIn, token } = useContext(AuthContext)
     const [user, setUser] = useState()
-    console.log("checking user:",user);
 
     useEffect(() => {
         fetch("/users/" + props.match.params.id, {
@@ -22,8 +21,6 @@ export default function MusicianProfile(props) {
     if (!user) {
         return "Loading";
     }
-
-    console.log("user data:", user);
 
     return (
         <div className="musician-container">

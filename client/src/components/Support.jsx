@@ -25,7 +25,7 @@ export default function Support() {
         };
         const response = await fetch('/support', options);
         const data = await response.json();
-        console.log("support data:", data)
+        // console.log("support data:", data)
 
         if (data.success) {
             alert("email send")

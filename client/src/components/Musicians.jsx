@@ -19,8 +19,6 @@ export default function MusicianAccount(props) {
             })
     }, [token])
 
-    console.log(allMusicians);
-
     if (!isLoggedIn) {
         return <Redirect to="/login" />;
     }

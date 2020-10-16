@@ -26,6 +26,8 @@ export default function TrackUpload(props) {
           },
         }}
         maxFiles={1}
+        allowFileTypeValidation
+        acceptedFileTypes={'audio/*'}
         className="filepath"
       />
     </div>

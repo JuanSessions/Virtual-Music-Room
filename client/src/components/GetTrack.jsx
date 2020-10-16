@@ -7,7 +7,6 @@ export default function GetTrack() {
         fetch("/track")
             .then(res => res.json())
             .then(data => {
-                console.log("data:", data)
                 setTracks(data.tracks)
             })
     }, [])

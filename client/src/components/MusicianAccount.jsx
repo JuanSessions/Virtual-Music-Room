@@ -30,9 +30,7 @@ export default function MusicianAccount() {
     return "loading";
   }
 
-  console.log("musicianData:", musicianData);
   setUserCountry(musicianData.country);
-  console.log("userCountry:", userCountry);
 
   let userEmailStored = musicianData.email;
   setUserEmail(userEmailStored);

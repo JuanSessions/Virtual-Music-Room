@@ -37,7 +37,6 @@ export default function Register(props) {
             body: JSON.stringify(userData)
         };
         const response = await fetch('/users', options);
-        console.log("response data from register:", response)
         const data = await response.json();
         // console.log(response.headers.get("x-auth"))
 
@@ -56,10 +55,8 @@ export default function Register(props) {
         }
     }
 
-    console.log("setCountry:", country)
-
     const onSelectFlag = (countryCode) => {
-        console.log(countryCode)
+        // console.log(countryCode)
         setCountry(countryCode)
     }
 

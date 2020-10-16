@@ -106,8 +106,8 @@ class SingleProject extends React.Component {
       return "Loading";
     }
 
-    console.log("project:", project);
-    console.log("props:", this.props);
+   // console.log("project:", project);
+   // console.log("props:", this.props);
 
     return (
       <div className="single-project-container-outer">

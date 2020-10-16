@@ -22,8 +22,6 @@ function SearchUser() {
             })
     }, [token])
 
-    console.log("allMusicians:", allMusicians);
-
     let userData = allMusicians && allMusicians.map((musician, i) => {
         if (searchValue && musician.name.toLowerCase() === searchValue.toLowerCase()) {
             return (
