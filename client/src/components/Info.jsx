@@ -30,12 +30,12 @@ function Info() {
         possible.
       </p>
 
-      <h3>Live jam sessions in the next future</h3>
+      <h3>* The virtual visit could get even more interesting in live jam sessions in the next future</h3>
       <p>
         With the proper WiFi infrastructure the virtual visits to the room can
         be done during live jam sessions with all the artists playing LIVE
-        remotely and the interesting and unique option for the guests to control
-        the volumes of the mix positioning themselves in the room. This way the
+        remotely and with the interesting and unique option for the guests to control
+        the volumes of the mix, positioning themselves in the room. This way the
         user can focus in a particular performance to connect and possibly work
         together with those specific artists that are performing and actually
         check how they can improvise, etc. There's already in USA a zone between
